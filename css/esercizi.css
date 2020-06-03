@@ -105,7 +105,6 @@
   animation-name: es-12-top;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-direction: alternate;
 }
 @keyframes es-12-top {
   0% {left:10%}
@@ -116,10 +115,36 @@
   animation-name: es-12-bottom;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-direction: alternate;
 }
 @keyframes es-12-bottom {
   0% {right:20%}
   50%{right:calc(100% - 60px)}
   100%{right:20%}
+}
+/* esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: es-13-top;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes es-13-top {
+  0% {left:10%;top:-10px;}
+  20%{left:calc(100% - 50px); top:-10px;}
+  45%{left:calc(100% - 50px); top:60px;}
+  70%{ left:-10px;top:60px;}
+  95%{left:-10px; top:-10px;}
+  100%{top:-10px;left:10%;}
+}
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: es-13-bottom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes es-13-bottom {
+  0% {right:20%; bottom:-10px;}
+  20%{right:calc(100% - 50px); bottom:-10px;}
+  45%{right:calc(100% - 50px); bottom:60px;}
+  70%{ right:-10px;bottom:60px;}
+  95%{right:-10px; bottom:-10px;}
+  100%{bottom:-10px;right:20%;}
 }
